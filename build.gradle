@@ -3,20 +3,20 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.70"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.21"
     }
 }
 
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '0.4.8'
+    id 'org.jetbrains.intellij' version '0.6.5'
 }
 
 apply plugin: 'java'
 apply plugin: "kotlin"
 
-group 'me.hiten'
-version '0.2'
+group 'org.incoder'
+version '1.0.0'
 
 sourceCompatibility = 1.8
 
@@ -25,12 +25,13 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 }
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    pluginName 'android-dependencies-completion'
+    pluginName 'dependencies-completion'
     version '2019.1.2'
     updateSinceUntilBuild = false
     plugins = ['Groovy', 'gradle']

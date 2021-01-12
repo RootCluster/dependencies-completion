@@ -1,11 +1,11 @@
-package me.hiten.completion
+package org.incoder.completion
 
 import com.intellij.codeInsight.lookup.LookupElement
 import com.intellij.codeInsight.lookup.LookupElementBuilder
 import com.intellij.codeInsight.lookup.LookupElementPresentation
 import com.intellij.codeInsight.lookup.LookupElementRenderer
-import me.hiten.completion.Config.Q_SYMBOL
-import me.hiten.completion.Config.Q_SYMBOL_ALL
+import org.incoder.completion.Config.Q_SYMBOL
+import org.incoder.completion.Config.Q_SYMBOL_ALL
 
 object LookupElementFactory {
 

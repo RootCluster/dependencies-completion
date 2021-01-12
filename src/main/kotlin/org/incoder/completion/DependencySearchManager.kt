@@ -1,8 +1,8 @@
-package me.hiten.completion
+package org.incoder.completion
 
 import com.intellij.util.containers.isNullOrEmpty
-import me.hiten.completion.androidsearch.AndroidDependencySearcher
-import me.hiten.completion.mavensearch.MavenDependencySearcher
+import org.incoder.completion.androidsearch.AndroidDependencySearcher
+import org.incoder.completion.mavensearch.MavenDependencySearcher
 
 class DependencySearchManager(private val dependencyText: DependencyText) {
 

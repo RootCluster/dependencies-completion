@@ -1,72 +1,68 @@
-[中文说明](https://juejin.im/post/5cee3498e51d4556be5b39e4)
+# dependencies-completion
 
-# android-dependencies-completion
+<div align="right">
+  Language:
+  🇺🇸
+  <a title="Chinese" href="README-CN.md">🇨🇳</a>
+</div>
 
-This is an Android Studio / IntelliJ IDEA plugin for search and complete dependencies from google() and mavenCentral() in Gradle projects.
+This is an Android Studio / IntelliJ IDEA plugin for search and complete dependencies from google() and mavenCentral()
+in Gradle projects.
 
-This project base on [GradleDependenciesHelperPlugin](https://github.com/siosio/GradleDependenciesHelperPlugin).
+This project base on [android-dependencies-completion](https://github.com/HitenDev/android-dependencies-completion) ,
+reference project [TranslationPlugin](https://github.com/YiiGuxing/TranslationPlugin).
 
-# Features
-- support google and mavenCentral，include android's `jetpack`/`androidx`/`support` packages.
+> This plugin is inspired by [android-dependencies-completion](https://github.com/HitenDev/android-dependencies-completion) and uses some of its source code.
+
+## Features
+
+- support [google](https://maven.google.com) and [mavenCentral](https://search.maven.org)
+  and <font color="red">**nexus**</font>，include android's `jetpack`/`androidx`/`support` packages.
+- <font color="red">support add custom repository.</font>
 - support generating variable and custom variable.
 - dependencies variable offline covert.
 - simple and clear UI.
 
+## Installation
 
-![](https://user-gold-cdn.xitu.io/2019/5/29/16b0239b1d4b3618?w=730&h=378&f=png&s=96725)
+- Plugin website:
+- Download file: https://github.com/RootCluster/dependencies-completion/releases
 
-# Installation
-- Plugin website: https://plugins.jetbrains.com/plugin/12479
+## Usage
 
-- Download file: https://github.com/HitenDev/android-dependencies-completion/releases
-
-# Usage
-
- **Enabled `Code Completion->SmartType Completion` and `Shortcut Key`**
-
-![](https://user-gold-cdn.xitu.io/2019/5/29/16b01bc59c8ffd3d?w=881&h=408&f=png&s=63983)
+**Settings**
+：<kbd>Code Completion</kbd> -> <kbd>SmartType Completion</kbd> -> <kbd>Smart Type Completion（Enabled）</kbd>
 
 **Default Shortcut Key**
-- macos `^(control) + ⇧(shift) + space`
-- windows `ctrl + alt + space`
-- linux `ctrl + shift + space`
 
-
-
-
+- macOS：<kbd>^(control)</kbd> + <kbd>⇧(shift)</kbd> + <kbd>Space</kbd>
+- Windows：<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd>
+- Linux：<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd>
 
 *All the following operations are manual, please note.*
 
 ## Normal Operation
 
-input string in xxx.gradle file
-
-then press `Shortcut Key`
-
-![](https://user-gold-cdn.xitu.io/2019/5/29/16b021d453eef7c0?w=836&h=368&f=gif&s=159919)
+1. input dependencies info in `xxx.gradle` file
+2. then press `Shortcut Key` (eg：<kbd>^(control)</kbd> + <kbd>⇧(shift)</kbd> + <kbd>Space</kbd>)
 
 ## Generating Variable
-- append `'#'` to the end of the input string will generate a version variable
 
-- append `'##'` to the end of the input string will generate a full variable
-
-then press `Shortcut Key`
-
-![](https://user-gold-cdn.xitu.io/2019/5/29/16b031d2139637d9?w=850&h=376&f=gif&s=220945)
+1. append placeholder
+    - append `'#'` to the end of the input string will generate a version variable
+    - append `'##'` to the end of the input string will generate a full variable
+2. then press `Shortcut Key`
 
 ## Custom Variable
 
-- append `'#'+custom` to the end of the input string will generate a version variable
+1. append placeholder
+    - append `'#'+custom` to the end of the input string will generate a version variable
+    - append `'##'+custom` to the end of the input string will generate a full variable
+2. then press `Shortcut Key`
 
-- append `'##'+custom` to the end of the input string will generate a full variable
+## License
 
-then press `Shortcut Key`
+dependencies-completion is Open Source software plugins released under
+the [MIT License](https://opensource.org/licenses/MIT).
 
-![](https://user-gold-cdn.xitu.io/2019/5/29/16b031d3cef4a76c?w=794&h=324&f=gif&s=235109)
 
-
-# Contact Me
-
-- `nickname`: HitenDev
-- `email`: zzdxit@gmail.com
-- `juejin`: https://juejin.im/user/595a16125188250d944c6997

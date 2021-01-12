@@ -1,4 +1,4 @@
-package me.hiten.completion
+package org.incoder.completion
 
 import com.intellij.util.net.IdeHttpClientHelpers
 import org.apache.http.client.config.RequestConfig

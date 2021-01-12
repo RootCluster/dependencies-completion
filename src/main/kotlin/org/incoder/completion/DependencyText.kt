@@ -1,7 +1,7 @@
-package me.hiten.completion
+package org.incoder.completion
 
-import me.hiten.completion.Config.Q_SYMBOL
-import me.hiten.completion.Config.Q_SYMBOL_ALL
+import org.incoder.completion.Config.Q_SYMBOL
+import org.incoder.completion.Config.Q_SYMBOL_ALL
 
 
 class DependencyText(val text: String) {

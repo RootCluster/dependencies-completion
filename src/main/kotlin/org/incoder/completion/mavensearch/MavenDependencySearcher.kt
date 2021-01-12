@@ -1,7 +1,7 @@
-package me.hiten.completion.mavensearch
+package org.incoder.completion.mavensearch
 
-import me.hiten.completion.Client
-import me.hiten.completion.DependencySearcher
+import org.incoder.completion.Client
+import org.incoder.completion.DependencySearcher
 
 class MavenDependencySearcher : DependencySearcher {
 

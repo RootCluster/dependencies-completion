@@ -1,4 +1,4 @@
-package me.hiten.completion
+package org.incoder.completion
 
 
 interface DependencySearcher {

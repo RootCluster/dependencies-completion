@@ -1,6 +1,6 @@
-package me.hiten.completion.androidsearch
+package org.incoder.completion.androidsearch
 
-import me.hiten.completion.DependencySearcher
+import org.incoder.completion.DependencySearcher
 
 class AndroidDependencySearcher : DependencySearcher {
 
@@ -29,7 +29,7 @@ class AndroidDependencySearcher : DependencySearcher {
     }
 
     override fun searchVersion(groupId: String, artifact: String): List<DependencySearcher.Result>? {
-        return GoogleMavenArtifactVersionSearcher.searchVersion(groupId,artifact)?.map {
+        return GoogleMavenArtifactVersionSearcher.searchVersion(groupId, artifact)?.map {
             DependencySearcher.Result(SOURCE).apply {
                 this.groupId = groupId
                 this.artifact = artifact

@@ -1,4 +1,4 @@
-package me.hiten.completion
+package org.incoder.completion
 
 import com.intellij.openapi.util.IconLoader
 import javax.swing.Icon

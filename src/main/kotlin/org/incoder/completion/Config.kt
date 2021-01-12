@@ -1,4 +1,4 @@
-package me.hiten.completion
+package org.incoder.completion
 
 object Config {
     var Q_SYMBOL = "#"

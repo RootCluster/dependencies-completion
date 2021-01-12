@@ -1,6 +1,6 @@
-package me.hiten.completion.androidsearch
+package org.incoder.completion.androidsearch
 
-import me.hiten.completion.Client
+import org.incoder.completion.Client
 import org.apache.http.util.TextUtils
 import org.xml.sax.Attributes
 import org.xml.sax.InputSource
